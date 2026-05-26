@@ -32,5 +32,5 @@ def ingest_weather_data(start_date: str, end_date:str ) -> dict:
 
     data = response.json()
 
-    return data
+    return data['daily']
 
